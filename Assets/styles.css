@@ -1,33 +1,34 @@
 * {
-    /* font-family:; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
+    background: linear-gradient(135deg, #69b3eb, #c510fc);
     height: 100vh;
     overflow: hidden;
     width: 100%;
 }
 
-::selection {
-    background: #3c87ff;
-    color: #fff;
-}
-
 .wrapper {
     background: #fff;
-    border-radius: 7px;
+    border-radius: 15px;
     box-shadow: 10px 30px 10px 5px rgba(0, 0, 0, 0.5);
-    margin: 137px auto;
-    max-width: 405px;
+    margin: 100px auto;
+    max-width: 400px;
     padding: 30px 0;
+    padding-top: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .task-input {
-    height: 52px;
+    height: 50px;
     padding: 0 25px;
     position: relative;
 }
@@ -40,7 +41,7 @@ body {
 
 .task-input input {
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 18px;
     height: 100%;
     outline: none;
@@ -50,21 +51,22 @@ body {
 
 .task-input input:focus, .task-input input.active {
     border: 2px solid #3c87ff;
-    padding-left: 52px;
+    /* padding-left: 52px; */
 }
 
 .task-input input::placeholder {
-    color: #bfbfbf;
+    /* color: #bfbfbf; */
 }
 
 .control, li {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .controls {
     border-bottom: 1px solid #ccc;
+    display: flex;
     padding: 18px 25px;
 }
 
@@ -84,18 +86,23 @@ body {
 }
 
 .controls .clear-btn {
-    background: linear-gradient(135deg, #1798fb 0%, #2d5cfe 100%);
+    background: linear-gradient(-45deg, #7ac2fa 0%, #2d5cfe 100%);
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
     font-size: 12px;
     letter-spacing: 0.3px;
-    opacity: 0.6;
-    outline: none;
     padding: 7px 12px;
-    pointer-events: none;
-    transition: transform 0.25s ease;
+    transition: transform 0.4s ease;
+}
+
+.filters {
+    padding-top: 5px;
+}
+
+.clear {
+    padding-left: 72px;
 }
 
 .clear-btn.active {
@@ -226,6 +233,10 @@ body {
 @media (max-width: 400px) {
     body {
         padding: 0 10px;
+    }
+
+    .clear {
+        padding-left: 0;
     }
 
     .wrapper {

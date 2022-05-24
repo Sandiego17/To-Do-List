@@ -59,9 +59,9 @@ body {
 }
 
 .control, li {
-    /* align-items: center; */
-    /* display: flex; */
-    /* justify-content: space-between; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .controls {
@@ -177,9 +177,9 @@ body {
     position: relative;
 }
 
-.settings :where(i, li) {
+/* .settings :where(i, li) {
     cursor: pointer;
-}
+} */
 
 .settings .task-menu {
     background: #fff;
@@ -205,30 +205,30 @@ body {
     transform-origin: top right;
 }
 
-.task-menu.show {
+/* .task-menu.show {
     transform: scale(1);
-}
+} */
 
-.task-menu li {
+/* .task-menu li {
     cursor: pointer;
     font-size: 16px;
     height: 25px;
     justify-content: flex-start;
     margin-bottom: 2px;
     padding: 17px 15px;
-}
+} */
 
-.task-menu li:last-child {
+/* .task-menu li:last-child {
     margin-bottom: 0;
-}
+} */
 
-.settings li:hover {
+/* .settings li:hover {
     background: #f5f5f5;
-}
+} */
 
-.settings li i {
+/* .settings li i {
     padding-right: 8px;
-}
+} */
 
 @media (max-width: 400px) {
     body {
@@ -260,7 +260,7 @@ body {
         padding: 0 15px 10px 20px;
     }
 
-    .task label input {
+    /* .task label input {
         margin-top: 4px;
-    }
+    } */
 }

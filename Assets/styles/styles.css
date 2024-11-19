@@ -1,239 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(135deg, #69b3eb, #c510fc);
-    height: 100vh;
-    overflow: hidden;
+  background: linear-gradient(135deg, #69B3EB, #C510FC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .wrapper {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 10px 30px 10px 5px rgba(0, 0, 0, 0.5);
-    margin: 100px auto;
-    max-width: 400px;
-    padding: 30px 0;
-    padding-top: 10px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 10px 30px 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 10px 0 30px;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .task-input {
-    height: 50px;
-    padding: 0 25px;
-    position: relative;
+  height: 50px;
+  padding: 0 25px;
+  position: relative;
 }
 
 .task-input svg {
-    position: absolute;
-    top: 50%;
-    transform: translate(17px, -50%);
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
 }
 
 .task-input input {
-    border: 1px solid #999;
-    border-radius: 25px;
-    font-size: 18px;
-    height: 100%;
-    outline: none;
-    padding: 0 20px 0 53px;
-    width: 100%;
+  border: 1px solid #999999;
+  border-radius: 25px;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 20px 0 53px;
 }
 
-.task-input input:focus, .task-input input.active {
-    border: 2px solid #3c87ff;
+.task-input input:focus,
+.task-input input.active {
+  border: 2px solid #3C87FF;
 }
 
 .task-input input::placeholder {
-    color: #bfbfbf;
+  color: #BFBFBF;
 }
 
 .control, li {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .controls {
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    padding: 18px 25px;
+  border-bottom: 1px solid #CCCCCC;
+  display: flex;
+  padding: 18px 25px;
 }
 
 .controls .clear-btn {
-    background: linear-gradient(-45deg, #7ac2fa 0%, #2d5cfe 100%);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 12px;
-    padding: 7px 12px;
-    transition: transform 0.4s ease;
-    outline: none;
+  background: linear-gradient(-45deg, #7AC2FA 0%, #2D5CFE 100%);
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 7px 12px;
+  transition: transform 0.4s ease;
+  outline: none;
 }
 
 .filters span {
-    color: #444;
-    cursor: pointer;
-    font-size: 17px;
-    margin: 0 8px;
+  color: #444444;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0 8px;
 }
 
 .filters span:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .filters span.active {
-    color: #3c87ff;
+  color: #3C87FF;
 }
 
 .filters {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .clear {
-    padding-left: 38px;
+  padding-left: 38px;
 }
 
 .clear-btn:active {
-    transform: scale(0.93);
+  transform: scale(0.93);
 }
 
 .task-box {
-    margin: 20px 5px 0 0;
-    padding: 0 10px 10px 15px;
+  margin: 20px 5px 0 0;
+  padding: 0 10px 10px 15px;
 }
 
 .task-box.overflow {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.task-box::-webkit-scrollbar {
-    /* width: 2px; */
-}
-
-.task-box::-webkit-scrollbar-track {
-    /* background: #f1f1f1; */
-    /* border-radius: 25px; */
-}
-
-.task-box::-webkit-scrollbar-thumb {
-    /* background: #e6e6e6; */
-    /* border-radius: 25px; */
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .task-box .task {
-    border: 1px solid #ccc;
-    font-size: 17px;
-    list-style: none;
-    margin-bottom: 18px;
-    padding: 12px;
+  border: 1px solid #CCCCCC;
+  font-size: 17px;
+  list-style: none;
+  margin-bottom: 18px;
+  padding: 12px;
 }
 
 .task label {
-    display: flex;
+  display: flex;
 }
 
 .task label p.checked {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .task label input {
-    margin-right: 10px;
-    margin-top: 7px;
+  margin-right: 10px;
+  margin-top: 7px;
 }
 
 .task .settings {
-    cursor: pointer;
-    position: relative;
+  cursor: pointer;
+  position: relative;
 }
 
 .task label p {
-    max-width: 280px;
-    word-wrap: break-word;
+  max-width: 280px;
+  word-wrap: break-word;
 }
 
 .settings .task-menu {
-    background: #fff;
-    border-radius: 4px;
-    bottom: -65px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-    padding: 5px 0;
-    position: absolute;
-    right: -5px;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.2s ease;
-    z-index: 2;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  padding: 5px 0;
+  position: absolute;
+  bottom: -65px;
+  right: -5px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+  z-index: 2;
 }
 
 .settings .task-menu.show {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .task-menu li {
-    font-size: 16px;
-    height: 25px;
-    justify-content: flex-start;
-    margin-bottom: 2px;
-    padding: 17px 15px;
+  font-size: 16px;
+  height: 25px;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+  padding: 17px 15px;
 }
 
 .task-menu li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .settings li:hover {
-    background: #f5f5f5;
+  background: #F5F5F5;
 }
 
 .task-menu li i {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 @media (max-width: 400px) {
-    body {
-        padding: 0 10px;
-    }
+  body {
+    padding: 0 10px;
+  }
 
-    .clear {
-        padding-left: 0;
-    }
+  .clear {
+    padding-left: 0;
+  }
 
-    .wrapper {
-        padding: 20px 0;
-    }
+  .wrapper {
+    padding: 20px 0;
+  }
 
-    .filters span {
-        margin: 0 5px;
-    }
+  .filters span {
+    margin: 0 5px;
+  }
 
-    .task-input {
-        padding: 0 20px;
-    }
+  .task-input {
+    padding: 0 20px;
+  }
 
-    .controls {
-        padding: 18px 20px;
-    }
+  .controls {
+    padding: 18px 20px;
+  }
 
-    .task-box {
-        margin: 20px 5px 0 0;
-        padding: 0 15px 10px 20px;
-    }
+  .task-box {
+    margin: 20px 5px 0 0;
+    padding: 0 15px 10px 20px;
+  }
 
-    .task label input {
-        margin-top: 4px;
-    }
+  .task label input {
+    margin-top: 4px;
+  }
 }
